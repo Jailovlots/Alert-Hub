@@ -1,0 +1,171 @@
+Create a *simple Disaster Alert Mobile Application* using *Expo* and *React Native*.
+
+The application should help users *receive disaster alerts and safety information* such as typhoons, floods, earthquakes, and landslides.
+
+### General Requirements
+
+* Use *Expo (React Native)* for development.
+* The application must have a *clean, simple, and beginner-friendly UI*.
+* The system should be designed for *school or community use*.
+* Notifications should inform users about *disaster warnings and emergency announcements*.
+
+---
+
+# Application Features
+
+### 1. Splash Screen
+
+* Display the *Disaster Alert App logo*
+* Show the text *“Disaster Alert System”*
+* Automatically navigate to the *Home Screen after 3 seconds*
+
+---
+
+### 2. Home Screen
+
+Display the following menu options:
+
+* Latest Alerts
+* Disaster Information
+* Safety Tips
+* Emergency Contacts
+
+Each option should navigate to a different screen.
+
+---
+
+### 3. Latest Alerts Screen
+
+This screen should show disaster alerts such as:
+
+Example alert cards:
+
+* Typhoon Warning
+* Flood Warning
+* Earthquake Alert
+* Landslide Warning
+
+Each alert should contain:
+
+* Title
+* Date
+* Description
+* Severity Level (Low / Medium / High)
+
+---
+
+### 4. Disaster Information Screen
+
+Display information about different disasters:
+
+* Typhoon
+* Flood
+* Earthquake
+* Landslide
+* Fire
+
+Each section should contain:
+
+* Short description
+* Possible dangers
+* What people should do
+
+---
+
+### 5. Safety Tips Screen
+
+Display safety tips such as:
+
+*Before Disaster*
+
+* Prepare emergency kits
+* Charge phones
+* Monitor weather updates
+
+*During Disaster*
+
+* Stay calm
+* Follow evacuation instructions
+* Move to safe areas
+
+*After Disaster*
+
+* Check injuries
+* Avoid damaged buildings
+* Follow government updates
+
+---
+
+### 6. Emergency Contacts Screen
+
+Display important contact numbers such as:
+
+* Police
+* Fire Department
+* Ambulance
+* Disaster Response Team
+
+Each contact should include:
+
+* Name
+* Phone Number
+* Call button
+
+---
+
+### Optional Features (If possible)
+
+* Push notifications for new disaster alerts
+* Dark mode
+* Offline disaster information
+
+---
+
+### Technical Requirements
+
+Use the following technologies:
+
+* *React Native*
+* *Expo*
+* *React Navigation*
+* *Expo Notifications*
+
+Folder structure example:
+
+/components
+/screens
+/navigation
+/assets
+
+Screens to include:
+
+* SplashScreen.js
+* HomeScreen.js
+* AlertsScreen.js
+* DisasterInfoScreen.js
+* SafetyTipsScreen.js
+* EmergencyContactsScreen.js
+
+---
+
+### UI Design
+
+* Use *simple card layout*
+* Use colors:
+
+  * Red → Danger
+  * Yellow → Warning
+  * Green → Safe
+* Make it *mobile friendly*
+
+---
+
+### Output Requirements
+
+Generate:
+
+* Complete *React Native Expo project structure*
+* All *screen components*
+* Navigation setup
+* Sample disaster alert data
+* Clean and well-commented code
