@@ -1,0 +1,40 @@
+﻿app/+not-found.tsx(3,10): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/_layout.tsx(12,10): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/alerts.tsx(5,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/alerts.tsx(8,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+app/alerts.tsx(9,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/alerts.tsx(19,8): error TS7016: Could not find a declaration file for module 'react-native-reanimated'. 'D:/zdspgc-portal/Alert-Hub/node_modules/react-native-reanimated/lib/module/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-reanimated` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-reanimated';`
+app/disaster-info.tsx(5,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/disaster-info.tsx(8,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+app/disaster-info.tsx(9,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/disaster-info.tsx(20,8): error TS7016: Could not find a declaration file for module 'react-native-reanimated'. 'D:/zdspgc-portal/Alert-Hub/node_modules/react-native-reanimated/lib/module/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-reanimated` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-reanimated';`
+app/emergency-contacts.tsx(5,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/emergency-contacts.tsx(9,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+app/emergency-contacts.tsx(10,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/emergency-contacts.tsx(11,3): error TS2305: Module '"react-native"' has no exported member 'Alert'.
+app/emergency-contacts.tsx(21,8): error TS7016: Could not find a declaration file for module 'react-native-reanimated'. 'D:/zdspgc-portal/Alert-Hub/node_modules/react-native-reanimated/lib/module/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-reanimated` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-reanimated';`
+app/home.tsx(5,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/home.tsx(8,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+app/home.tsx(9,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/home.tsx(18,8): error TS7016: Could not find a declaration file for module 'react-native-reanimated'. 'D:/zdspgc-portal/Alert-Hub/node_modules/react-native-reanimated/lib/module/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-reanimated` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-reanimated';`
+app/index.tsx(5,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/index.tsx(6,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+app/index.tsx(7,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/index.tsx(18,8): error TS7016: Could not find a declaration file for module 'react-native-reanimated'. 'D:/zdspgc-portal/Alert-Hub/node_modules/react-native-reanimated/lib/module/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-reanimated` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-reanimated';`
+app/safety-tips.tsx(5,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+app/safety-tips.tsx(8,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+app/safety-tips.tsx(9,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+app/safety-tips.tsx(19,8): error TS7016: Could not find a declaration file for module 'react-native-reanimated'. 'D:/zdspgc-portal/Alert-Hub/node_modules/react-native-reanimated/lib/module/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-reanimated` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-reanimated';`
+components/ErrorFallback.tsx(4,3): error TS2305: Module '"react-native"' has no exported member 'StyleSheet'.
+components/ErrorFallback.tsx(10,3): error TS2305: Module '"react-native"' has no exported member 'useColorScheme'.
+components/ErrorFallback.tsx(11,3): error TS2305: Module '"react-native"' has no exported member 'Platform'.
+components/ErrorFallback.tsx(67,21): error TS7031: Binding element 'pressed' implicitly has an 'any' type.
+components/ErrorFallback.tsx(91,21): error TS7031: Binding element 'pressed' implicitly has an 'any' type.
+components/ErrorFallback.tsx(137,29): error TS7031: Binding element 'pressed' implicitly has an 'any' type.
+components/KeyboardAwareScrollViewCompat.tsx(2,10): error TS2305: Module '"react-native"' has no exported member 'Platform'.

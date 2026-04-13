@@ -27,7 +27,7 @@ function RootLayoutNav() {
     <Stack
       screenOptions={{
         headerShown: false,
-        contentStyle: { backgroundColor: theme.background },
+        contentStyle: { backgroundColor: theme.background } as any,
         animation: "slide_from_right",
       }}
     >
@@ -50,17 +50,26 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
+    // Hide splash screen when fonts are loaded OR if there's an error.
+    // Also add a safety timeout to ensure we don't stay white forever if fonts fail silently.
+    const timeout = setTimeout(() => {
+      SplashScreen.hideAsync().catch(() => { });
+    }, 5000);
+
     if (fontsLoaded || fontError) {
-      SplashScreen.hideAsync();
+      clearTimeout(timeout);
+      SplashScreen.hideAsync().catch(() => { });
     }
+    return () => clearTimeout(timeout);
   }, [fontsLoaded, fontError]);
 
-  if (!fontsLoaded && !fontError) return null;
+  // If fonts take too long, we'll still render.
+  // We only block during the initial few seconds.
 
   return (
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
-        <GestureHandlerRootView style={{ flex: 1 }}>
+        <GestureHandlerRootView style={{ flex: 1 } as any}>
           <KeyboardProvider>
             <RootLayoutNav />
           </KeyboardProvider>

@@ -18,3 +18,15 @@ export const insertUserSchema = createInsertSchema(users).pick({
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
+
+export type SeverityLevel = "Low" | "Medium" | "High";
+
+export interface Alert {
+  id: string;
+  type: "typhoon" | "flood" | "earthquake" | "landslide" | "fire";
+  title: string;
+  date: string;
+  description: string;
+  severity: SeverityLevel;
+  location: string;
+}

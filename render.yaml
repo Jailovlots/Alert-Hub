@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: alert-hub
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false # Set this in the Render dashboard
+      - key: PORT
+        value: 5000

@@ -17,9 +17,11 @@ import Animated, {
   withSpring,
   FadeInDown,
 } from "react-native-reanimated";
+import { useQuery } from "@tanstack/react-query";
 import * as Haptics from "expo-haptics";
 import Colors from "@/constants/colors";
-import { ALERTS, Alert, SeverityLevel } from "@/constants/data";
+import { Alert, SeverityLevel } from "@shared/schema";
+import { ALERTS as STATIC_ALERTS } from "@/constants/data";
 
 type FilterType = "All" | SeverityLevel;
 
@@ -105,7 +107,12 @@ export default function AlertsScreen() {
   const topPadding = Platform.OS === "web" ? 67 : insets.top;
   const bottomPadding = Platform.OS === "web" ? 34 : insets.bottom;
 
-  const filtered = filter === "All" ? ALERTS : ALERTS.filter((a) => a.severity === filter);
+  const { data: realTimeAlerts, isLoading, error } = useQuery<Alert[]>({
+    queryKey: ["alerts"],
+  });
+
+  const alerts = realTimeAlerts && realTimeAlerts.length > 0 ? realTimeAlerts : STATIC_ALERTS;
+  const filtered = filter === "All" ? alerts : alerts.filter((a: Alert) => a.severity === filter);
 
   const FILTERS: FilterType[] = ["All", "High", "Medium", "Low"];
 
@@ -155,7 +162,11 @@ export default function AlertsScreen() {
         ]}
         showsVerticalScrollIndicator={false}
       >
-        {filtered.length === 0 ? (
+        {isLoading ? (
+          <View style={styles.emptyState}>
+            <Text style={{ color: theme.textSecondary }}>Checking for real-time alerts...</Text>
+          </View>
+        ) : filtered.length === 0 ? (
           <View style={styles.emptyState}>
             <Ionicons name="checkmark-circle-outline" size={48} color={Colors.safe} />
             <Text style={[styles.emptyTitle, { color: theme.text }]}>No Alerts</Text>
@@ -165,7 +176,7 @@ export default function AlertsScreen() {
           </View>
         ) : (
           <View style={styles.alertList}>
-            {filtered.map((alert, i) => (
+            {filtered.map((alert: Alert, i: number) => (
               <AlertCard key={alert.id} alert={alert} delay={i * 80} />
             ))}
           </View>

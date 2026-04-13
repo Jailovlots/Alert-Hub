@@ -21,13 +21,13 @@
       "package": "com.myapp",
       "adaptiveIcon": {
         "backgroundColor": "#0D0D0F",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "foregroundImage": "./assets/images/disaster.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "monochromeImage": "./assets/images/disaster.png"
       }
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/disaster.png"
     },
     "plugins": [
       [
